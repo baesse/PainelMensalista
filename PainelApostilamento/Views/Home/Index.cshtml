@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@model  List<PainelApostilamento.Models.Protocolo>
+
+<table style="font-size:large" class="table table-condensed">
+
+    <tr>
+        <th>Protocolo</th>
+        <th>Cliente</th>
+        <th>Previsão</th>
+        <th>Pronto</th>
+        
+
+        
+    </tr>
+
+    <tbody>
+
+
+
+        @foreach (PainelApostilamento.Models.Protocolo PROTOCOLO in Model)
+        {
+
+            if (PROTOCOLO.Pronto.Equals("Concluido"))
+            {
+                <tr style="background-color: greenyellow">
+                    <td>@PROTOCOLO.PROTOCOLO</td>
+                    <td>@PROTOCOLO.NomeCliente</td>
+                    <td>@PROTOCOLO.Revisao</td>
+                    <td>@PROTOCOLO.Pronto</td>
+
+                </tr>
+
+            }
+            else
+            {
+            <tr style="background-color: red">
+                <td>@PROTOCOLO.PROTOCOLO</td>
+                <td>@PROTOCOLO.NomeCliente</td>
+                <td>@PROTOCOLO.Revisao</td>
+                <td>@PROTOCOLO.Pronto</td>
+
+            </tr>
+            }
+
+        }
+
+
+
+    </tbody>
+    
+</table>
