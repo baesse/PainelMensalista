@@ -11,22 +11,12 @@ namespace PainelApostilamento.Controllers
         public ActionResult Index()
         {
 
-            List<Models.Protocolo> PROTOCOLOS = new List<Models.Protocolo>();
-            PROTOCOLOS.Add(new Models.Protocolo("15151/2017", "Sergio Orlando", "15/06", "Concluido"));
-            PROTOCOLOS.Add(new Models.Protocolo("15151/2017", "Sergio Orlando", "15/06", "não concluido"));
-            PROTOCOLOS.Add(new Models.Protocolo("15151/2017", "Sergio Orlando", "15/06", "Concluido"));
-            PROTOCOLOS.Add(new Models.Protocolo("15151/2017", "Sergio Orlando", "15/06", "Concluido"));
-            PROTOCOLOS.Add(new Models.Protocolo("15151/2017", "Sergio Orlando", "15/06", "não concluido"));
-            PROTOCOLOS.Add(new Models.Protocolo("15151/2017", "Sergio Orlando", "15/06", "Concluido"));
-            PROTOCOLOS.Add(new Models.Protocolo("15151/2017", "Sergio Orlando", "15/06", "não concluido"));
-            PROTOCOLOS.Add(new Models.Protocolo("15151/2017", "Sergio Orlando", "15/06", "Concluido"));
-            PROTOCOLOS.Add(new Models.Protocolo("15151/2017", "Sergio Orlando", "15/06", "Concluido"));
-
+          
 
            
 
             
-            return View("Index",PROTOCOLOS);
+            return View("Index");
         }
 
         public ActionResult About()

@@ -1,0 +1,32 @@
+﻿@using PainelApostilamento.Models;
+
+
+
+@model  Protocolo
+
+
+@{
+    ViewBag.Title = "Cadastro";
+}
+
+<body>
+
+
+    @using (@Html.BeginForm("Cadastrar", "Cadastro", FormMethod.Post))
+    {
+
+        @Html.LabelFor(p => p.PROTOCOLO)
+        @Html.TextBoxFor(p => p.PROTOCOLO, new { @class = "form-control" })
+        @Html.LabelFor(p => p.NomeCliente)
+        @Html.TextBoxFor(p => p.NomeCliente, new { @class = "form-control" })
+        @Html.LabelFor(p => p.Revisao)
+        @Html.TextBoxFor(p => p.Revisao, new { @class = "form-control" })
+        @Html.LabelFor(p => p.Pronto)
+        @Html.TextBoxFor(p => p.Pronto, new { @class = "form-control" })
+
+
+        <input type="submit" class="btn btn-primary" value="Cadastrar" />
+
+
+    }
+</body>
